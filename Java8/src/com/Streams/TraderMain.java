@@ -1,6 +1,9 @@
 package com.Streams;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class TraderMain {
@@ -12,8 +15,8 @@ public class TraderMain {
     }
 
     private static void groupByCurrency(List<Transaction> transactions) {
-        Map<Currency,List<Transaction>> groupByMap=transactions.stream().collect(Collectors.groupingBy(Transaction::getValue));
-        for (Map.Entry<Currency,List<Transaction>> entry:)
+        //Map<Currency,List<Transaction>> groupByMap=transactions.stream().collect(Collectors.groupingBy(Transaction::getValue));
+        //for (Map.Entry<Currency,List<Transaction>> entry:)
     }
 
     private static void doStreamOperations(List<Transaction> transactions) {
